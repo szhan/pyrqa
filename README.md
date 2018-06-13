@@ -1,3 +1,5 @@
+# PyRQA
+
 General Information
 -------------------
 
@@ -122,4 +124,3 @@ Please acknowledge the use of the PyRQA software by citing the following publica
 For further information on the evaluation of different implementations, see:
 
     Rawald, T., Sips, M., Marwan, N., Leser, U. (2015): Massively Parallel Analysis of Similarity Matrices on Heterogeneous Hardware. - In: Fischer, P. M., Alonso, G., Arenas, M., Geerts, F. (Eds.), Proceedings of the Workshops of the EDBT/ICDT 2015 Joint Conference (EDBT/ICDT), (CEUR Workshop Proceedings ; 1330), p. 56-62.
-# pyrqa
