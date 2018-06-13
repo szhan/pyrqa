@@ -1,0 +1,112 @@
+{
+  "_comment": "This file is part of PyRQA. Copyright 2015 Tobias Rawald, Mike Sips.",
+  "config_data": [
+    {
+      "computation_class": "RecurrencePlot",
+      "neighbourhood_class": "FixedRadius",
+      "class": "ColumnByte",
+      "kernel_file_names": [
+        "create_matrix_column_byte.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "ColumnMatBitNoRec",
+      "kernel_file_names": [
+        "create_matrix_column_bit.cl",
+        "vertical_bit.cl",
+        "diagonal_bit.cl",
+        "clear_buffer.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "ColumnMatBitRec",
+      "kernel_file_names": [
+        "vertical_column_bit_rec.cl",
+        "diagonal_bit.cl",
+        "clear_buffer.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "ColumnMatByteNoRec",
+      "kernel_file_names": [
+        "create_matrix_column_byte.cl",
+        "vertical_byte.cl",
+        "diagonal_byte.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "ColumnMatByteRec",
+      "kernel_file_names": [
+        "vertical_column_byte_rec.cl",
+        "diagonal_byte.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "ColumnNoMat",
+      "kernel_file_names": [
+        "vertical_column_no_mat.cl",
+        "diagonal_column_no_mat.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "RowMatBitNoRec",
+      "kernel_file_names": [
+        "create_matrix_row_bit.cl",
+        "vertical_bit.cl",
+        "diagonal_bit.cl",
+        "clear_buffer.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "RowMatBitRec",
+      "kernel_file_names": [
+        "vertical_row_bit_rec.cl",
+        "diagonal_bit.cl",
+        "clear_buffer.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "RowMatByteNoRec",
+      "kernel_file_names": [
+        "create_matrix_row_byte.cl",
+        "vertical_byte.cl",
+        "diagonal_byte.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "RowMatByteRec",
+      "kernel_file_names": [
+        "vertical_row_byte_rec.cl",
+        "diagonal_byte.cl"
+      ]
+    },
+    {
+      "computation_class": "RQA",
+      "neighbourhood_class": "FixedRadius",
+      "class": "RowNoMat",
+      "kernel_file_names": [
+        "vertical_row_no_mat.cl",
+        "diagonal_row_no_mat.cl"
+      ]
+    }
+  ]
+}
+

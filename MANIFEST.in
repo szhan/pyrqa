@@ -1,0 +1,7 @@
+include pyrqa/.pylintrc
+include pyrqa/config.json
+include LICENSE.txt
+include MANIFEST.in
+include NOTICE.txt
+include README.md
+recursive-include pyrqa *.cl
