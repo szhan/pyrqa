@@ -118,6 +118,7 @@ Publications
 ------------
 
 Please acknowledge the use of the PyRQA software by citing the following publication:
+    Rawald, T., Sips, M., Marwan, N. (2017): PyRQA – Conducting Recurrence Quantification Analysis on Very Long Time Series Efficiently, Computers & Geosciences, 104, 101–108. DOI:10.1016/j.cageo.2016.11.016
 
     Rawald, T., Sips, M., Marwan, N., Dransch, D. (2014): Fast Computation of Recurrences in Long Time Series. - In: Marwan, N., Riley, M., Guiliani, A., Webber, C. (Eds.), Translational Recurrences. From Mathematical Theory to Real-World Applications, (Springer Proceedings in Mathematics and Statistics ; 103), p. 17-29.
 
