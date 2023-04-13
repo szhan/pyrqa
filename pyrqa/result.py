@@ -267,71 +267,71 @@ class RQAResult(AbstractSettings, AbstractRuntimes):
     @property
     def recurrence_rate(self):
         """ Recurrence rate (RR). """
-        recurrence_rate = np.float(0)
+        recurrence_rate = float(0)
         if self.settings.number_of_vectors > 0:
-            recurrence_rate = np.float(self.number_of_recurrence_points) / pow(self.settings.number_of_vectors, 2)
+            recurrence_rate = float(self.number_of_recurrence_points) / pow(self.settings.number_of_vectors, 2)
         return recurrence_rate
 
     @property
     def average_local_recurrence_rate(self):
         """ Average local recurrence rate. """
-        average_local_recurrence_rate = np.float(0)
+        average_local_recurrence_rate = float(0)
         if self.settings.number_of_vectors > 0:
-            average_local_recurrence_rate = np.float(self.number_of_recurrence_points) / self.settings.number_of_vectors
+            average_local_recurrence_rate = float(self.number_of_recurrence_points) / self.settings.number_of_vectors
         return average_local_recurrence_rate
 
     @property
     def determinism(self):
         """ Determinism (DET). """
-        determinism = np.float(0)
+        determinism = float(0)
         if self.number_of_recurrence_points > 0:
-            determinism = np.float(self.number_of_diagonal_lines_points) / self.number_of_recurrence_points
+            determinism = float(self.number_of_diagonal_lines_points) / self.number_of_recurrence_points
         return determinism
 
     @property
     def average_diagonal_line(self):
         """ Average diagonal line length (L). """
-        average_diagonal_line = np.float(0)
+        average_diagonal_line = float(0)
         if self.number_of_diagonal_lines > 0:
-            average_diagonal_line = np.float(self.number_of_diagonal_lines_points) / self.number_of_diagonal_lines
+            average_diagonal_line = float(self.number_of_diagonal_lines_points) / self.number_of_diagonal_lines
         return average_diagonal_line
 
     @property
     def divergence(self):
         """ Divergence (DIV). """
-        divergence = np.float(0)
+        divergence = float(0)
         if self.longest_diagonal_line > 0:
-            divergence = np.float(1) / self.longest_diagonal_line
+            divergence = float(1) / self.longest_diagonal_line
         return divergence
 
     @property
     def laminarity(self):
         """ Laminarity (LAM). """
-        laminarity = np.float(0)
+        laminarity = float(0)
         if self.number_of_recurrence_points > 0:
-            laminarity = np.float(self.number_of_vertical_lines_points) / self.number_of_recurrence_points
+            laminarity = float(self.number_of_vertical_lines_points) / self.number_of_recurrence_points
         return laminarity
 
     @property
     def trapping_time(self):
         """ Trapping time (TT). """
-        trapping_time = np.float(0)
+        trapping_time = float(0)
         if self.number_of_vertical_lines > 0:
-            trapping_time = np.float(self.number_of_vertical_lines_points) / self.number_of_vertical_lines
+            trapping_time = float(self.number_of_vertical_lines_points) / self.number_of_vertical_lines
         return trapping_time
 
     @property
     def average_white_vertical_line(self):
         """ Average white vertical line length (W). """
-        average_white_vertical_line = np.float(0)
+        average_white_vertical_line = float(0)
         if self.number_of_white_vertical_lines > 0:
-            average_white_vertical_line = np.float(self.number_of_white_vertical_lines_points) / self.number_of_white_vertical_lines
+            average_white_vertical_line = float(self.number_of_white_vertical_lines_points) / self.number_of_white_vertical_lines
         return average_white_vertical_line
 
     @property
     def ratio_determinism_recurrence_rate(self):
         """ Ratio determinism / recurrence rate (DET/RR). """
-        ratio_determinism_recurrence_rate = np.float(0)
+        ratio_determinism_recurrence_rate = float(0)
         if self.recurrence_rate > 0:
             ratio_determinism_recurrence_rate = self.determinism / self.recurrence_rate
         return ratio_determinism_recurrence_rate
@@ -339,7 +339,7 @@ class RQAResult(AbstractSettings, AbstractRuntimes):
     @property
     def ratio_laminarity_determinism(self):
         """ Ratio laminarity / determinism (LAM/DET). """
-        ratio_laminarity_determinism = np.float(0)
+        ratio_laminarity_determinism = float(0)
         if self.determinism > 0:
             ratio_laminarity_determinism = self.laminarity / self.determinism
         return ratio_laminarity_determinism
